@@ -1,4 +1,4 @@
-require 'controller'
+require_relative 'controller'
 
 class Router
 
@@ -13,17 +13,17 @@ class Router
         while true 
             #lance une boucle while pour contenir le menu, il faut faire un choix sinon ça continuera à s'afficher
             puts "L'ami, veux-tu jacter ou dégager ?"
-            print ">>>>"
 
-            puts "1: On jacte ferme, comme Loin Rueil dans Queneau (1944, p. 198)"
-            puts "4: On jacte pas nouuuus. Je veux quitter l'app."
+            puts "1: Tu veux spill the tea ?"
+            puts "4: T'es plutôt coffee et tu veux quitter l'app ?"
 
+            puts ">>>>"
             choice = gets.chomp.to_i 
             #demande une saisie à l'utilisateur en chiffre avec .to_i
 
             case choice 
             when 1 
-                puts "Tu as choisi de jacter." 
+                puts "Tu as choisi de spiller du thé." 
                 #puts qui confirme le choix
                 @controller.create_gossip 
                 #renvoie vers la méthode qui crée le gossip dans controller
