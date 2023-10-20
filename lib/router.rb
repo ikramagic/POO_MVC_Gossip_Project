@@ -12,18 +12,18 @@ class Router
 
         while true 
             #lance une boucle while pour contenir le menu, il faut faire un choix sinon ça continuera à s'afficher
-            puts "L'ami, veux-tu jacter ou dégager ?"
+            puts "Thé ou café ?"
 
             puts "1: Tu veux spill the tea ?"
             puts "4: T'es plutôt coffee et tu veux quitter l'app ?"
 
             puts ">>>>"
-            choice = gets.chomp.to_i 
+            params = gets.chomp.to_i 
             #demande une saisie à l'utilisateur en chiffre avec .to_i
 
-            case choice 
+            case params 
             when 1 
-                puts "Tu as choisi de spiller du thé." 
+                puts "Tu as choisi de servir du thé." 
                 #puts qui confirme le choix
                 @controller.create_gossip 
                 #renvoie vers la méthode qui crée le gossip dans controller
