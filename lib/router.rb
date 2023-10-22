@@ -14,8 +14,8 @@ class Router
             #lance une boucle while pour contenir le menu, il faut faire un choix sinon ça continuera à s'afficher
             puts "Thé ou café ?"
 
-            puts "1: Tu veux spill the tea ?"
-            puts "4: T'es plutôt coffee et tu veux quitter l'app ?"
+            puts "1: Thé : Je veux parler sur le dos de quelqu'un de manière anonyme car je suis plein(e) de bravitude."
+            puts "4: Café : Je veux quitter l'app et retourner à ma vie paisible d'ermite dans les Pyrénées."
 
             puts ">>>>"
             params_menu = gets.chomp.to_i 
@@ -23,13 +23,13 @@ class Router
 
             case params_menu 
             when 1 
-                puts "Tu as choisi de servir du thé." 
+                puts "Tu as choisi de parler sur le dos de quelqu'un de manière anonyme." 
                 #puts qui confirme le choix
                 @controller.create_gossip 
                 #renvoie vers la méthode qui crée le gossip dans controller
             
             when 4 
-                puts "Tu as choisi de quitter l'app. Au revoir." 
+                puts "Tu as choisi de quitter l'app. Bon retour dans les Pyrénées." 
                 #puts qui confirme le choix
                 break 
                 #permet de sortir de la boucle while, c'est même la seule façon d'en sortir
