@@ -20,7 +20,7 @@ class View
         gossips.each do |displayed_gossip|
             puts displayed_gossip.author
             puts displayed_gossip.content
-            #penser à indiquer ce qu'on souhaite afficher avec le puts sinon affichera l'objet Gossip avec ID en #
+            #penser à indiquer ce qu'on souhaite afficher avec le puts sinon affichera l'objet Gossip avec ID au lieu de la valeur
         end
     end
 end
