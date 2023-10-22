@@ -8,17 +8,28 @@ class Router
     end 
     
     def perform
-        puts "Bienvenue dans ZE GOSSIPEUH PRO-JACTE :"
+        puts "Bienvenue dans The Gossip Project."
+        puts "Edition : Les Pro-Jacteurs"
+
+        sleep 2
+
+        puts "Oh la la!"
+
+        sleep 2
 
         while true 
             #lance une boucle while pour contenir le menu, il faut faire un choix sinon ça continuera à s'afficher
-            puts "Qu'est-ce qui vous ferait plaisir ?"
+            puts "🗣 Qu'est-ce qui vous ferait plaisir ?"
 
-            puts "1: Thé : Je veux parler sur le dos de quelqu'un de manière anonyme car je suis plein(e) de bravitude."
-            puts "2: Thé discret : Je veux avoir accès aux archives pour lire les déblatérations déjà postées."
-            puts "4: Café : Je veux quitter l'app et retourner à ma vie paisible d'ermite dans les Pyrénées."
+            sleep 2
 
-            puts ">>>>"
+            puts "1: Ajouter un potin : Je veux parler sur le dos de quelqu'un de manière anonyme car je suis plein(e) de bravitude."
+            puts "2: Voir les potins : Je veux avoir accès aux archives pour lire les déblatérations déjà postées."
+            puts "4: M'en aller : Je veux quitter l'app et retourner à ma vie paisible d'ermite dans les Pyrénées."
+
+            sleep 1
+
+            print ">>>> "
             params_menu = gets.chomp.to_i 
             #demande une saisie à l'utilisateur en chiffre avec .to_i
 
