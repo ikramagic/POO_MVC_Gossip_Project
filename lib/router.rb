@@ -12,9 +12,10 @@ class Router
 
         while true 
             #lance une boucle while pour contenir le menu, il faut faire un choix sinon ça continuera à s'afficher
-            puts "Thé ou café ?"
+            puts "Qu'est-ce qui vous ferait plaisir ?"
 
             puts "1: Thé : Je veux parler sur le dos de quelqu'un de manière anonyme car je suis plein(e) de bravitude."
+            puts "2: Thé discret : Je veux avoir accès aux archives pour lire les déblatérations déjà postées."
             puts "4: Café : Je veux quitter l'app et retourner à ma vie paisible d'ermite dans les Pyrénées."
 
             puts ">>>>"
@@ -27,6 +28,10 @@ class Router
                 #puts qui confirme le choix
                 @controller.create_gossip 
                 #renvoie vers la méthode qui crée le gossip dans controller
+
+            when 2
+                puts "Tu as choisi d'accéder aux archives. Bienvenue dans la base de données Askip++."
+                @controller.index_gossip
             
             when 4 
                 puts "Tu as choisi de quitter l'app. Bon retour dans les Pyrénées." 
