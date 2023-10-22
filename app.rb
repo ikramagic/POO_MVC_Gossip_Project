@@ -6,6 +6,4 @@ require_relative 'lib/gossip'
 require_relative 'lib/router'
 require_relative 'lib/view'
 
-#binding.pry
-
 Router.new.perform
