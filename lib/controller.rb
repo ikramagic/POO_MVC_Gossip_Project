@@ -14,7 +14,12 @@ class Controller
         @gossip.save 
             #demande au model (=gossip) de l'enregistrer dans le CSV
     end
-end
 
 #à noter qu'il est aussi possible, de manière un peu moins compacte 
 #de créer une variable gossip = Gossip.new... pour créer l'instance de classe, et ensuite d'utiliser cette variable pour appliquer la méthode save
+
+    def index_gossip
+        all_gossips_array = Gossip.all #Controller demande à Gossip (modèle) de récupérer les gossips
+        View.new.index_gossip(all_gossips_array) #View s'instance et exécute sa propre méthode `index_gossip` qui affichera tous les potins    
+    end
+end
