@@ -25,6 +25,7 @@ class Router
 
             puts "1: Ajouter un potin : Je veux parler sur le dos de quelqu'un de manière anonyme car je suis plein(e) de bravitude."
             puts "2: Voir les potins : Je veux avoir accès aux archives pour lire les déblatérations déjà postées."
+            puts "3: Supprimer un potin : Je veux supprimer une déblatération de la base de données."
             puts "4: M'en aller : Je veux quitter l'app et retourner à ma vie paisible d'ermite dans les Pyrénées."
 
             sleep 1
@@ -43,6 +44,10 @@ class Router
             when 2
                 puts "Tu as choisi d'accéder aux archives. Bienvenue dans la base de données Askip++."
                 @controller.index_gossip
+
+            when 3
+                puts "Tu as choisi de supprimer un potin."
+                @controller.destroy
             
             when 4 
                 puts "Tu as choisi de quitter l'app. Bon retour dans les Pyrénées." 
