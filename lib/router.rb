@@ -18,10 +18,10 @@ class Router
             puts "4: T'es plutôt coffee et tu veux quitter l'app ?"
 
             puts ">>>>"
-            params = gets.chomp.to_i 
+            params_menu = gets.chomp.to_i 
             #demande une saisie à l'utilisateur en chiffre avec .to_i
 
-            case params 
+            case params_menu 
             when 1 
                 puts "Tu as choisi de servir du thé." 
                 #puts qui confirme le choix
@@ -36,7 +36,7 @@ class Router
             
             else 
                 #si saisie autre que choix dispo
-                puts "Oh, oh. Ce choix n'est pas disponible. Tu dois choisir une des options affichées. Retente ta chance." 
+                puts "Oh, oh. Ce choix n'est pas disponible. Tu dois choisir une des options affichées à l'aide des numéros affichés." 
                 #on l'indique à l'utilisateur
             end
         end
